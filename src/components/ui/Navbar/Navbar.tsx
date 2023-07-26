@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import NavHeader from '../NavHeader/NavHeader'
 import NavLink from '../NavLink/NavLink'
-import { block } from "million/react";
 
 const Navbar = () => {
 
