@@ -1,3 +1,5 @@
+"use client"
+
 import Head from "next/head";
 import Link from "next/link";
 import Brand from "@/components/ui/Brand/Brand";
@@ -7,7 +9,7 @@ import { GoogleIcon } from "@/components/Icons/GoogleIcon";
 
 export default function Login() {
   return (
-    <>
+    <main className="bg-gray-900">
       <Head>
         <title>Login - Mailgo</title>
       </Head>
@@ -58,6 +60,6 @@ export default function Login() {
           </form>
         </div>
       </main>
-    </>
+    </main>
   );
 }
