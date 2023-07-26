@@ -23,7 +23,7 @@ const Pricing = block(() => {
             ],
         },
         {
-            name: "Starter",
+            name: "Premium",
             desc: "Ideal for growing businesses",
             price: 12,
             isMostPop: true,
@@ -37,7 +37,7 @@ const Pricing = block(() => {
             ],
         },
         {
-            name: "Business",
+            name: "Enterprise",
             desc: "Built for marketing managers",
             price: 32,
             isMostPop: false,
@@ -60,6 +60,9 @@ const Pricing = block(() => {
                 <h2 className='text-gray-50 text-3xl font-semibold sm:text-4xl'>
                     Find a plan to power your business
                 </h2>
+                <p className="mt-3 text-gray-300">
+                    Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
+                </p>
             </div>
             <LayoutEffect
                 className="duration-1000 delay-300"
@@ -71,21 +74,25 @@ const Pricing = block(() => {
                 <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
                     {
                         plans.map((item, idx) => (
-                            <div key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border border-purple-500" : ""}`}
+                            <div key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-[38px] border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border-[3px] border-purple-500 scale-[1.05]" : ""}`}
                                 style={{
                                     backgroundImage: item.isMostPop ? mostPopPricingBg : ""
                                 }}
                             >
-                                <div className="p-8 space-y-4 border-b border-gray-800 text-center">
-                                    <span className='text-purple-600 font-medium'>
-                                        {item.name}
+                                <div className="p-8 space-y-4 border-b border-gray-800">
+                                    <span className='text-purple-400 font-semibold text-lg flex flex-row'>
+                                        {item.name} 
+                                        <div className={`${item.isMostPop ? "rounded-full ml-[60px] xl:ml-[91px] scale-[0.75] text-purple-100 bg-violet-500 py-[5px] px-3 text-normal" : "hidden"}
+                                        `}>
+                                            Most Popular
+                                        </div>
                                     </span>
-                                    <div className='text-gray-50 text-3xl font-semibold'>
-                                        ${item.price} <span className="text-xl text-gray-400 font-normal">/mo</span>
-                                    </div>
                                     <p className="text-gray-400">
                                         {item.desc}
                                     </p>
+                                    <div className='text-gray-50 text-[40px] font-bold font-poppins'>
+                                        ${item.price}<span className="text-lg text-gray-400 font-lg">/mo</span>
+                                    </div>
                                 </div>
                                 <div className="p-8">
                                     <ul className='space-y-3'>
@@ -108,7 +115,7 @@ const Pricing = block(() => {
                                         }
                                     </ul>
                                     <div className="pt-8">
-                                        <Button className={`w-full rounded-full text-white ring-offset-2 focus:ring ${item.isMostPop ? "bg-purple-600 hover:bg-purple-500 focus:bg-purple-700 ring-purple-600" : "bg-gray-800 hover:bg-gray-700 ring-gray-800"}`}>
+                                        <Button className={`w-full rounded-full text-white ring-offset-2 focus:ring ${item.isMostPop ? "bg-violet-600 hover:bg-violet-500" : "bg-gray-800 hover:bg-gray-700 ring-gray-800"}`}>
                                             Get Started
                                         </Button>
                                     </div>

@@ -9,7 +9,7 @@ import { GoogleIcon } from "@/components/Icons/GoogleIcon";
 
 export default function Login() {
   return (
-    <main className="bg-gray-900">
+    <main className="bg-gray-900 font-poppins">
       <Head>
         <title>Login - Mailgo</title>
       </Head>
