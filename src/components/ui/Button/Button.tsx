@@ -1,4 +1,4 @@
-const Button = ({ children, ...props }) => (
+const Button: React.FC<any> = ({ children, ...props }) => (
     <button
         role="button"
         {...props}

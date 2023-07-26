@@ -3,8 +3,9 @@ import SectionWrapper from "@/components/SectionWrapper"
 import GradientWrapper from "@/components/GradientWrapper"
 import Image from "next/image"
 import LayoutEffect from "@/components/LayoutEffect"
+import { block } from 'million/react'
 
-const Testimonial = () => {
+const Testimonial = block(() => {
 
     const testimonials = [
         {
@@ -98,6 +99,6 @@ const Testimonial = () => {
             </div>
         </SectionWrapper>
     )
-}
+})
 
 export default Testimonial

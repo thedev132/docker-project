@@ -1,6 +1,7 @@
 
 import LayoutEffect from "@/components/LayoutEffect"
 import SectionWrapper from "@/components/SectionWrapper"
+import { block } from 'million/react'
 
 const faqsList = [
     {
@@ -29,7 +30,7 @@ const faqsList = [
     }
 ]
 
-const FAQs = () => (
+const FAQs = block(() => (
     <SectionWrapper id="faqs">
         <div className="custom-screen text-gray-300">
             <div className="max-w-xl text-center xl:mx-auto">
@@ -69,6 +70,6 @@ const FAQs = () => (
             </div>
         </div>
     </SectionWrapper>
-)
+))
 
 export default FAQs

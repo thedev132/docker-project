@@ -8,7 +8,7 @@ import { block } from "million/react";
 const Navbar = () => {
 
     const [state, setState] = useState(false)
-    const menuBtnEl = useRef()
+    const menuBtnEl: any = useRef()
 
     const navigation = [
         { name: "Features", href: "/#features" },

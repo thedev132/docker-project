@@ -3,7 +3,7 @@ import Footer from "./ui/Footer/Footer"
 import Navbar from "./ui/Navbar/Navbar"
 import { block } from "million/react";
 
-const Layout = ({ children }) => {
+const Layout: React.FC<any> = ({ children }) => {
     return (
         <>
             <Head>

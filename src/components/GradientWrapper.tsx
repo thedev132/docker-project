@@ -1,5 +1,5 @@
 
-const GradientWrapper = ({ children, ...props }) => (
+const GradientWrapper: React.FC<any> = ({ children, ...props }) => (
     <div
         {...props}
         className={`relative ${props.className || ""}`}>

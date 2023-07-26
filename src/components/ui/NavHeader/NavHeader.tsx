@@ -2,7 +2,7 @@ import Link from "next/link";
 import Brand from "../Brand/Brand";
 import {block} from 'million/react'
 
-const NavHeader = ({ onClick, state, menuBtnEl }) => (
+const NavHeader: React.FC<any> = ({ onClick, state, menuBtnEl }) => (
     <div className="flex items-center justify-between py-5 md:block">
         <Link href="/">
             <Brand />

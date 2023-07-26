@@ -5,7 +5,7 @@ import NavLink from "../NavLink/NavLink"
 import LayoutEffect from "@/components/LayoutEffect"
 import { block } from 'million/react'
 
-const Hero = () => (
+const Hero = block(() => (
     <section>
         <div className="custom-screen py-28">
             <LayoutEffect className="duration-1000 delay-300"
@@ -24,7 +24,7 @@ const Hero = () => (
                             Manage your email marketing using AI
                         </h1>
                         <p className="max-w-xl mx-auto text-gray-300">
-                            Gain control of your business's growth with Mailgo's comprehensive marketing, automation, and email marketing platform.
+                            Gain control of your business&apos;s growth with Mailgo&apos;s comprehensive marketing, automation, and email marketing platform.
                         </p>
                         <div className="flex justify-center font-medium text-sm">
                             <NavLink
@@ -51,6 +51,6 @@ const Hero = () => (
             </LayoutEffect>
         </div>
     </section>
-)
+))
 
 export default Hero

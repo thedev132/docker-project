@@ -1,7 +1,8 @@
 import LayoutEffect from "@/components/LayoutEffect"
 import SectionWrapper from "@/components/SectionWrapper"
+import { block } from 'million/react'
 
-const Features = () => {
+const Features = block(() => {
 
     const featuresList = [
         {
@@ -107,6 +108,6 @@ const Features = () => {
             </div>
         </SectionWrapper>
     )
-}
+})
 
 export default Features

@@ -2,7 +2,7 @@ import SectionWrapper from "@/components/SectionWrapper"
 import Image from "next/image"
 import { block } from "million/react";
 
-const VisualFeatures = () => {
+const VisualFeatures = block(() => {
 
     const features = [
         {
@@ -24,7 +24,7 @@ const VisualFeatures = () => {
                         Take your email marketing to the next level with Mailgo
                     </h2>
                     <p className="mt-3">
-                        With Mailgo's powerful features, you can easily create and send beautiful emails that will engage your customers and drive more sales.
+                        With Mailgo&apos;s powerful features, you can easily create and send beautiful emails that will engage your customers and drive more sales.
                     </p>
                 </div>
                 <div className="mt-12">
@@ -61,6 +61,6 @@ const VisualFeatures = () => {
             </div>
         </SectionWrapper>
     )
-}
+})
 
 export default VisualFeatures

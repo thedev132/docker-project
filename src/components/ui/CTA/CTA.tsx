@@ -3,8 +3,9 @@ import Image from "next/image"
 import NavLink from "../NavLink/NavLink"
 import bgPattern from "../../../../public/images/bg-pattern.png"
 import LayoutEffect from "@/components/LayoutEffect"
+import { block } from 'million/react'
 
-const CTA = () => (
+const CTA = block(() => (
     <section>
         <GradientWrapper wrapperClassName="max-w-xs h-[13rem] top-12 inset-0">
             <div className="custom-screen py-28 relative">
@@ -45,6 +46,6 @@ const CTA = () => (
             </div>
         </GradientWrapper>
     </section>
-)
+))
 
 export default CTA

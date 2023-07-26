@@ -1,5 +1,5 @@
 
-export const GoogleIcon = ({
+export const GoogleIcon: React.FC<any> = ({
     className
 }) => (
     <svg

@@ -4,7 +4,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import Button from "../Button/Button";
 import { block } from "million/react";
 
-const Pricing = () => {
+const Pricing = block(() => {
 
     const plans = [
         {
@@ -120,6 +120,6 @@ const Pricing = () => {
             </LayoutEffect>
         </SectionWrapper>
     );
-};
+});
 
 export default Pricing

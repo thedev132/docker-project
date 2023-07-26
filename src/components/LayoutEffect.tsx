@@ -3,7 +3,7 @@
 import { useInView } from "framer-motion"
 import { cloneElement, useRef } from "react";
 
-const LayoutEffect = ({ children,
+const LayoutEffect: React.FC<any> = ({ children,
     className,
     isInviewState: { trueState = "", falseState = "" }
 }) => {

@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Brand from "@/components/ui/Brand";
-import Button from "@/components/ui/Button";
-import Input from "@/components/ui/Input";
-import { GoogleIcon } from "@/components/Icons";
+import Brand from "@/components/ui/Brand/Brand";
+import Button from "@/components/ui/Button/Button";
+import Input from "@/components/ui/Input/Input";
+import { GoogleIcon } from "@/components/Icons/GoogleIcon";
 
 export default function Login() {
   return (
