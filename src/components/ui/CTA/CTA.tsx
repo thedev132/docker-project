@@ -17,7 +17,7 @@ const CTA = block(() => (
                         falseState: "opacity-0 translate-y-6"
                     }}
                 >
-                    <div className="relative z-10">
+                    <div>
                         <div className="max-w-xl mx-auto text-center">
                             <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
                                 Unleash the Power of AI with Email Marketing
@@ -26,10 +26,10 @@ const CTA = block(() => (
                                 Mailgo is the perfect answer! Our AI-based email marketing platform enables you to create highly targeted email campaigns that are tailored to each individual subscriber.
                             </p>
                         </div>
-                        <div className="mt-6 flex justify-center font-medium text-sm group">
+                        <div className="mt-6  justify-center font-medium text-sm group">
                             <NavLink
                                 href="/#pricing"
-                                className="flex items-center text-white bg-purple-600 hover:bg-purple-500 active:bg-purple-700 "
+                                className=" items-center text-white bg-purple-600 hover:bg-purple-500 active:bg-purple-700 "
                             >
                                 Start now
                                 <BsArrowRightShort className='scale-[1.6] ml-[4px] mr-[3px] group-hover:translate-x-1 ease-linear duration-150 sm:block hidden' />
