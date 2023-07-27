@@ -26,7 +26,7 @@ const Hero = block(() => (
                             Streamlined Container Creation & Deployment
                         </h1>
                         <p className="max-w-xl mx-auto text-gray-300">
-                            Gain control of your business&apos;s growth with Mailgo&apos;s comprehensive marketing, automation, and email marketing platform.
+                        Unlock the full potential of Docker with Dockerverse&apos;s all-in-one container editing and cloud deployment platform.
                         </p>
                         <div className="flex justify-center font-medium text-sm group">
                             <NavLink
