@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import NavHeader from '../NavHeader/NavHeader'
@@ -7,8 +6,6 @@ import Aos from 'aos'
 import {BsArrowRightShort} from 'react-icons/bs'
 
 const Navbar = () => {
-
-    const [toggle, setToggle] = useState(false)
     
     useEffect(() => {
     Aos.init({duration: 3000});
@@ -32,7 +29,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className='absolute sticky top-0 z-50'>
+        <header className='sticky top-0 z-50'>
             <div className="custom-screen md:hidden">
                 <NavHeader menuBtnEl={menuBtnEl} state={state} onClick={() => setState(!state)} />
             </div>
@@ -57,8 +54,9 @@ const Navbar = () => {
                             <Link href="/login" className="block hover:text-gray-50">
                                 Sign in
                             </Link>
-                            <NavLink href="/#pricing" className="flex items-center justify-center gap-x-1 text-sm text-white font-medium custom-btn-bg border 
-                            border-gray-500 active:bg-gray-900 md:inline-flex">                                Start now
+                            <NavLink href="/signup" className="flex items-center justify-center gap-x-1 text-sm text-white font-medium custom-btn-bg border 
+                            border-gray-500 active:bg-gray-900 md:inline-flex group">
+                                Get Started
                                 <BsArrowRightShort className='scale-[1.6] ml-[1px] group-hover:translate-x-1 ease-linear duration-150 sm:block hidden'/>
                             </NavLink>
                         </div>

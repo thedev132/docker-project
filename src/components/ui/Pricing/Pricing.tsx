@@ -1,8 +1,8 @@
-
 import LayoutEffect from "@/components/LayoutEffect";
 import SectionWrapper from "@/components/SectionWrapper";
 import Button from "../Button/Button";
 import { block } from "million/react";
+import Link from "next/link";
 
 const Pricing = block(() => {
 
@@ -115,9 +115,12 @@ const Pricing = block(() => {
                                         }
                                     </ul>
                                     <div className="pt-8">
-                                        <Button className={`w-full rounded-full text-white ring-offset-2 focus:ring ${item.isMostPop ? "bg-violet-600 hover:bg-violet-500" : "bg-gray-800 hover:bg-gray-700 ring-gray-800"}`}>
-                                            Get Started
-                                        </Button>
+                                        <a href="/signup">
+                                            <Button className={`w-full rounded-full text-white
+                                            ${item.isMostPop ? "bg-violet-600 hover:bg-violet-500" : "bg-gray-800 hover:bg-gray-700 ring-gray-800"}`}>
+                                                Get Started
+                                            </Button>
+                                        </a>    
                                     </div>
                                 </div>
                             </div>

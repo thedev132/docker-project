@@ -1,4 +1,3 @@
-
 import GradientWrapper from "@/components/GradientWrapper"
 import Image from "next/image"
 import NavLink from "../NavLink/NavLink"
