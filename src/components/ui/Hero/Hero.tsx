@@ -1,57 +1,46 @@
-import GradientWrapper from "@/components/GradientWrapper"
 import Image from "next/image"
-import NavLink from "../NavLink/NavLink"
-import LayoutEffect from "@/components/LayoutEffect"
-import { block } from 'million/react'
-import Aos from "aos"
-import 'aos/dist/aos.css'
-import {BsArrowRightShort} from 'react-icons/bs'
 
-const Hero = block(() => (
-    <section data-aos="fade-in">
-        <div className="custom-screen py-28">
-            {/* <LayoutEffect className="duration-1000 delay-300"
-                isInviewState={{
-                    trueState: "opacity-1",
-                    falseState: "opacity-0"
-                }}
-            > */}
-                <div>
-                    <div className="space-y-5 max-w-3xl mx-auto text-center">
-                        <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r font-extrabold mx-auto sm:text-6xl pb-3"
-                            style={{
-                                backgroundImage: "linear-gradient(179.1deg, #FFFFFF 0.77%, rgba(255, 255, 255, 0) 182.09%)"
-                            }}
-                        >
-                            Streamlined Container Creation & Deployment
-                        </h1>
-                        <p className="max-w-xl mx-auto text-gray-300">
-                        Unlock the full potential of Docker with Dockerverse&apos;s all-in-one container editing and cloud deployment platform.
-                        </p>
-                        <div className="flex justify-center font-medium text-sm group">
-                            <NavLink
-                                href="/#pricing"
-                                className="flex items-center text-white bg-violet-600 hover:bg-violet-500"
-                            >
-                                Get Started
-                                <BsArrowRightShort className='scale-[1.6] ml-[4px] mr-[2px] group-hover:translate-x-1 ease-linear duration-150 sm:block hidden' />
-                            </NavLink>
+export default function NavBar() {
+    return (
+            <section className="bg-[url('/images/glow-bottom.svg')] bg-fill bg-no-repeat bg-bottom">
+                <div className="relative mx-auto max-w-6xl px-4 md:px-8">
+                    
+
+                    <div className="pb-4 pt-32 md:pb-32 md:pt-52">
+
+                        <div className="mx-auto max-w-3xl text-center"> 
+                            <div className="mb-6" data-aos="fade-down">
+                                <div className="relative inline-flex cc4v0 cqez1 cpt2o cimec">                                    
+                                    <a className="clnk2 relative c8cvf cuxtl cngu6 transition-colors transition-bg transition-border transition-text-decoration transition-fill transition-stroke transition-opacity transition-shadow transition-transform transition-filter transition-backdrop-filter duration-150 ease-in  csomw cm39l cc4v0 cqez1 ch9g6 cuhzf c5dkl cxxlx" href="#0">
+                                        <span className="relative inline-flex items-center">
+                                            API Studio is now in beta <span className="ctkza ct2xv cot2b duration-150 c2rol c8087">-&gt;</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <h1 className="cgnl7 bg-gradient-to-r from-purple-600 to-purple-600 cr2fi chaw1 ch3zp cicf4 ckopp cjeaj" data-aos="fade-down">The API Security Framework</h1>
+                            <p className="cvj3n cd2du cuxtl" data-aos="fade-down" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+                            <div className="cknuf chnsh csz2t c0bgf c2mz6 c7xko cpdb4 c5cwt" data-aos="fade-down" data-aos-delay="400">
+                                <div>
+                                    <a className="cmae3 cytoa bg-gradient-to-r from-purple-600 to-purple-600 c53mx ccarb cvpag culnm transition-colors transition-bg transition-border transition-text-decoration transition-fill transition-stroke transition-opacity transition-shadow transition-transform transition-filter transition-backdrop-filter duration-150 ease-in c2rol cnen9 cxxlx" href="#0">
+                                        Get Started <span className="ctkza ctfx3 ct2xv cot2b duration-150 c2rol c8087">-&gt;</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a className="cmae3 cytoa cp73f clbrg czs2g cco4s duration-150 c2rol cfn05 c5dkl" href="#0">
+                                        <svg className="ckcxm cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                            <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z"></path>
+                                        </svg>
+                                        <span>Read the docs</span>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <GradientWrapper className="mt-16 sm:mt-28" wrapperClassName="max-w-3xl h-[250px] top-12 inset-0 sm:h-[300px] lg:h-[650px]">
-                        <Image
-                            data-aos="fade-in"
-                            src="/images/hero.svg"
-                            className="shadow-lg rounded-2xl"
-                            alt="Mailgo"
-                            width="1200"
-                            height="691"
-                        />
-                    </GradientWrapper>
-                </div>
-            {/* </LayoutEffect> */}
-        </div>
-    </section>
-))
 
-export default Hero
+                    </div>
+                </div>
+            </section>
+            
+    )
+}

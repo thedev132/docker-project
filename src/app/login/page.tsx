@@ -59,7 +59,8 @@ export default function Login() {
               className='w-full flex items-center justify-center gap-x-3 py-2.5 border border-gray-800 rounded-lg text-sm font-medium bg-gray-800/40 hover:bg-gray-800 ring-purple-500 focus:ring duration-150'>
               <GoogleIcon className={""}/>
               Continue with Google
-            </button>
+            </button>  
+            
           </form>
         </div>
       </main>
